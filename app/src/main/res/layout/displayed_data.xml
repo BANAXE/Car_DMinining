@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Results"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <!-- Five TextViews -->
+    <TextView
+        android:id="@+id/text_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_text_view"
+        android:text="TextView 1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+    <TextView
+        android:id="@+id/text_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="TextView 2" />
+    <TextView
+        android:id="@+id/text_view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view2"
+        android:layout_centerHorizontal="true"
+        android:text="TextView 1"
+        android:layout_marginTop="24dp" />
+    <TextView
+        android:id="@+id/text_view4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view3"
+        android:layout_centerHorizontal="true"
+        android:text="TextView 1"
+        android:layout_marginTop="24dp" />
+    <TextView
+        android:id="@+id/text_view5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view4"
+        android:layout_centerHorizontal="true"
+        android:text="TextView 1"
+        android:layout_marginTop="24dp" />
+
+    <!-- Add three more TextViews similarly -->
+
+    <!-- Horizontal Line (View acting as <hr>) -->
+    <View
+        android:id="@+id/hr_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/text_view5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="#000000" /> <!-- Change the color as needed -->
+
+    <!-- Two TextViews below the line -->
+    <TextView
+        android:id="@+id/text_view6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="TextView 6"
+        android:layout_below="@id/hr_view"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/text_view7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="TextView 7"
+        android:layout_below="@id/text_view6"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>

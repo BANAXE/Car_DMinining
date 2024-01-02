@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top Image -->
+    <ImageView
+        android:id="@+id/top_image_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/car_image"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true" />
+
+    <!-- Radio Buttons -->
+
+    <!-- Results Button -->
+
+    <RadioGroup
+        android:id="@+id/radio_group_ml_algorithms"
+        android:layout_width="200dp"
+        android:layout_height="163dp"
+        android:layout_below="@id/top_image_third"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="13dp">
+
+        <!-- KNN Radio Button -->
+
+        <!-- Decision Tree Radio Button -->
+        <RadioButton
+            android:id="@+id/radio_knn"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:text="KNN" />
+
+
+        <RadioButton
+            android:id="@+id/radio_decision_tree"
+            android:layout_width="150dp"
+            android:layout_height="68dp"
+            android:layout_below="@id/radio_knn"
+            android:text="Decision Tree" />
+
+        <!-- Bayes Network Radio Button -->
+        <RadioButton
+            android:id="@+id/radio_bayes_network"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_decision_tree"
+            android:text="Bayes Network" />
+
+        <!-- Input for KNN -->
+        <!-- Initially hidden -->
+
+    </RadioGroup>
+    <EditText
+        android:id="@+id/knn_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/radio_group_ml_algorithms"
+        android:hint="Enter K Value"
+        android:inputType="numberDecimal"
+        android:visibility="visible"
+        tools:ignore="NotSibling" />
+
+    <Button
+        android:id="@+id/results_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="106dp"
+        android:text="Results" />
+
+</RelativeLayout>
