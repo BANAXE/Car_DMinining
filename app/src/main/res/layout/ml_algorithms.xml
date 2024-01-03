@@ -64,7 +64,7 @@
         android:layout_below="@id/radio_group_ml_algorithms"
         android:hint="Enter K Value"
         android:inputType="numberDecimal"
-        android:visibility="visible"
+        android:visibility="gone"
         tools:ignore="NotSibling" />
 
     <Button

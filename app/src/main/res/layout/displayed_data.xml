@@ -4,12 +4,21 @@
     android:layout_height="match_parent"
     >
 
+    <ImageView
+        android:id="@+id/top_image_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/car_image"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true" />
+
     <!-- Title -->
     <TextView
         android:id="@+id/title_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Results"
+        android:layout_below="@id/top_image_third"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
@@ -17,42 +26,10 @@
 
     <!-- Five TextViews -->
     <TextView
-        android:id="@+id/text_view1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/title_text_view"
-        android:text="TextView 1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp" />
-    <TextView
-        android:id="@+id/text_view2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_view1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        android:text="TextView 2" />
-    <TextView
-        android:id="@+id/text_view3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/text_view2"
-        android:layout_centerHorizontal="true"
-        android:text="TextView 1"
-        android:layout_marginTop="24dp" />
-    <TextView
-        android:id="@+id/text_view4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/text_view3"
-        android:layout_centerHorizontal="true"
-        android:text="TextView 1"
-        android:layout_marginTop="24dp" />
-    <TextView
         android:id="@+id/text_view5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_view4"
+        android:layout_below="@+id/title_text_view"
         android:layout_centerHorizontal="true"
         android:text="TextView 1"
         android:layout_marginTop="24dp" />
