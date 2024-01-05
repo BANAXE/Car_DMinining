@@ -107,7 +107,11 @@ public class FourthActivity extends AppCompatActivity {
                 String predictedClass = Bayes.predict(model, testInstance);
                 textview7.setText("Predicted Class: " + predictedClass);
             } else if (selectedAlgorithm.equals("Decision Tree")) {
-                textview7.setText("Not Done !");
+                int weightValue = Integer.parseInt(weight);
+                double horsePowerValue = Double.parseDouble(horsepower);
+                double displacementValue = Double.parseDouble(displacement);
+                String result = DecisionTree.classify(weightValue, horsePowerValue, displacementValue);
+                textview7.setText("Predicted Class: " + result);
             } else {
                 textview7.setText("Choose a ML Algorithm :D");
             }
